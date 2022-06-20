@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НДС калькулятор онлайн</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">НДС калькулятор онлайн</h1>
+            <p class="header__text">С помощью этого сайта вы сможете <span>выделить НДС</span> или <span> начислить НДС в несколько нажатий.</p>
+      <p class="headre__text">Наберите число и нажмите &laquo;Enter&raquo;.</p>
+    </header>
+    <main class="content">
+    <section class="calculator">
+      <form class="calculator__form">
+        <div class="form-group__sum">
+        <label for="sum" class="calculator__sum"><b>Сумма:</b></label>
+        <input class="calculator__input-sum" type="number" name="sum" id="sum" min="0" step="0.01">
+        </div>
+        <div class="form-group">
+          <input type="radio" name="action" id="formactv" checked>
+          <label for="formactv" class="form-group__text"> <b>выделить НДС </b></label>
+          <input type="radio" name="action" id="formactn">
+          <label for="formactn" class="form-group__text"> <b>начислить НДС </b></label>
+          <input type="number" size="6" min="0" step="0.01" name="vat" value="20" class="form-group__input">%
+          <button class="form-group__submit" type="submit">Вычислить</button>
+        </div>
+      </form>
+    </section>
+    <div class="banner">Подразумевается какой-то баннер</div>
+    <section class="text-content">
+      <p class="text-content__text">Просто введите сумму, выберите операцию выделения или начисления НДС, ставку
+        и нажмите кнопку «Вычислить» чтобы рассчитать НДС.</p>
+        <div>
+          <ul class="text-content__list">
+            <li class="text-content__item"><span class="text-content__span-accent">Зачем?</span> <br>Расчет НДС является важным аспектом ведения бухгалтерии любого предприятия, работающего с общей системой налогообложения (ОСН). Для некоторых начинающих
+                предпринимателей выделение НДС является незнакомой процедурой, плата за ошибку в которой может оказаться высокой. Этот сайт поможет быстро выделить или начислить НДС, не вникая в тонкости математических вычислений.</li>
+                <li class="text-content__item"><span class="text-content__span-accent">Как выделить НДС?</span><br>Если у Вас под рукой не окажется интернета и надо будет выделить НДС - запомните этот простой алгоритм. Чтобы выделить НДС из суммы, нужно разделить сумму на 1+НДС (т.е.
+                    если НДС 18%, то разделить нужно на 1.18), вычесть из полученного исходную сумму, умножить на -1 и округлить до копеек в ближайшую сторону. Если вы делаете это на калькуляторе, то последние два действия легко выполнить в уме.</li>
+                <li class="text-content__item"><span class="text-content__span-accent">Как начислить НДС?</span><br> Начислить НДС еще проще. Если ставка НДС 18%, то умножьте сумму без НДС на 0.18 и вы получите сумму налога, а умножив на 1.18 вы получите сумму с учетом налога.</li>
+                </ul>
+    </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Редакция и владелец сайта не несут ответственности за ущерб или упущенную выгоду, причинённые в результате использования или невозможности использования информации с этого сайта. Вы пользуетесь этим сайтом на свой страх и риск.</p>
+    </footer>
+    </div>
+</body>
+
+</html>
