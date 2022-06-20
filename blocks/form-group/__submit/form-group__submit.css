@@ -1,3 +1,5 @@
 .form-group__submit {
     font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
 }

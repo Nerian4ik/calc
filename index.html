@@ -29,11 +29,12 @@
           <input type="radio" name="action" id="formactn">
           <label for="formactn" class="form-group__text"> <b>начислить НДС </b></label>
           <input type="number" size="6" min="0" step="0.01" name="vat" value="20" class="form-group__input">%
-          <button class="form-group__submit" type="submit">Вычислить</button>
+          <button class="form-group__submit" type="button">Вычислить</button>
         </div>
+
       </form>
     </section>
-    <div class="banner">Подразумевается какой-то баннер</div>
+    <!-- <div class="banner">Подразумевается какой-то баннер</div>
     <section class="text-content">
       <p class="text-content__text">Просто введите сумму, выберите операцию выделения или начисления НДС, ставку
         и нажмите кнопку «Вычислить» чтобы рассчитать НДС.</p>
@@ -50,8 +51,17 @@
     </main>
     <footer class="footer">
         <p class="footer__text">Редакция и владелец сайта не несут ответственности за ущерб или упущенную выгоду, причинённые в результате использования или невозможности использования информации с этого сайта. Вы пользуетесь этим сайтом на свой страх и риск.</p>
-    </footer>
+    </footer> -->
+
     </div>
+    <template id="template-result">
+        <ul class="element-result">
+        <li class="element-result__item element-result__item_type_sum"></li>
+        <li class="element-result__item element-result__item_type_vat"></li>
+        <li class="element-result__item element-result__item_type_result-sum"></li>
+    </ul>
+    </template>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 .calculator__input-sum {
     font-size: 22px;
     line-height: 1.1;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
 }
