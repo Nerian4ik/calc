@@ -1,4 +1,7 @@
 .element-result {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    margin: 40px;
+    gap: 20px 0;
 }

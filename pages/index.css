@@ -11,11 +11,6 @@
 @import url(../blocks/form-group/__input/form-group__input.css);
 @import url(../blocks/calculator/__form/calculator__form.css);
 @import url(../blocks/form-group/__submit/form-group__submit.css);
-@import url(../blocks/text-content/text-content.css);
-@import url(../blocks/text-content/__text/text-content__text.css);
-@import url(../blocks/text-content/__list/text-content__list.css);
-@import url(../blocks/text-content/__span-accent/text-content__span-accent.css);
-@import url(../blocks/text-content/__item/text-content__item.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/template/element-result/element-result.css);
 @import url(../blocks/template/element-result/__item/element-result__item.css);
