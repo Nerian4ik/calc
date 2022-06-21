@@ -1,0 +1,4 @@
+.element-result_active {
+    display: flex;
+    flex-direction: column;
+}

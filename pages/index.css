@@ -14,3 +14,5 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/template/element-result/element-result.css);
 @import url(../blocks/template/element-result/__item/element-result__item.css);
+@import url(../blocks/template/element-result/_active/element-result_active.css);
+@import url(../blocks/selected/selected.css);

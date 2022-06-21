@@ -28,20 +28,25 @@
           <label for="formactv" class="form-group__text"> <b>выделить НДС </b></label>
           <input type="radio" name="action" id="formactn">
           <label for="formactn" class="form-group__text"> <b>начислить НДС </b></label>
-          <input type="number" size="6" min="0" step="1" name="vat" value="20" class="form-group__input">%
+          <select id="selecttheme">
+            <option value="20" name="val" selected>20%</option>
+            <option value="18" name="val">18%</option>
+            <option value="10" name="val">10%</option>
+        </select>
           <button class="form-group__submit" type="button">Вычислить</button>
         </div>
 
       </form>
-    </section>
-
-    </div>
-    <template id="template-result">
-        <ul class="element-result">
+      <ul class="element-result">
         <li class="element-result__item element-result__item_type_sum"></li>
         <li class="element-result__item element-result__item_type_vat"></li>
         <li class="element-result__item element-result__item_type_result-sum"></li>
     </ul>
+    </section>
+
+    </div>
+    <template id="template-result">
+
     </template>
     <script src="./scripts/index.js"></script>
 </body>
