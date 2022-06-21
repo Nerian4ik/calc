@@ -26,13 +26,13 @@ button.addEventListener('click', function() {
     if (radioType[0].checked === true) {
         templateClone.querySelector('.element-result__item_type_sum').textContent = `Cумма без НДС: ${(+calcInputSum.value - +allocateVat().toFixed(2)).toFixed(2)} ₽`;
         templateClone.querySelector('.element-result__item_type_vat').textContent = `НДС ${selected.value}%: ${allocateVat().toFixed(2)} ₽`;
-        templateClone.querySelector('.element-result__item_type_result-sum').textContent = `Всего: ${+calcInputSum.value} ₽`;
+        templateClone.querySelector('.element-result__item_type_result-sum').textContent = `Всего: ${(+calcInputSum.value).toFixed(2)} ₽`;
         form.append(templateClone);
 
     } else if (radioType[1].checked === true) {
-        templateClone.querySelector('.element-result__item_type_sum').textContent = `Cумма без НДС: ${+calcInputSum.value} ₽`;
-        templateClone.querySelector('.element-result__item_type_vat').textContent = `НДС ${+selected.value}%: ${calcPercent()} ₽`;
-        templateClone.querySelector('.element-result__item_type_result-sum').textContent = `Всего: ${+calcInputSum.value + +calcPercent()} ₽`;
+        templateClone.querySelector('.element-result__item_type_sum').textContent = `Cумма без НДС: ${(+calcInputSum.value).toFixed(2)} ₽`;
+        templateClone.querySelector('.element-result__item_type_vat').textContent = `НДС ${+selected.value}%: ${calcPercent().toFixed(2)} ₽`;
+        templateClone.querySelector('.element-result__item_type_result-sum').textContent = `Всего: ${(+calcInputSum.value + +calcPercent()).toFixed(2)} ₽`;
         form.append(templateClone);
     }
 })
